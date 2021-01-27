@@ -10,15 +10,25 @@ public class OnChangePosition : MonoBehaviour
     public MeshCollider generatedMeshCollider;
     Mesh generatedMesh;
 
-    public float initalScale = 1f;
+    [Space(5)]
+
+    public bool isVertical;
+
+    private float initalScale = 1f;
 
     private void FixedUpdate()
     {
         if (transform.hasChanged)
         {
+            var wallY = transform.localPosition.z;
+
+            if (isVertical)
+                wallY = transform.localPosition.y;
+
+
             transform.hasChanged = false;
 
-            hole2DCollider.transform.position = new Vector2(transform.position.x, transform.position.z);
+            hole2DCollider.transform.position = new Vector2(transform.localPosition.x, wallY);
             hole2DCollider.transform.localScale = transform.localScale * initalScale;
 
             MakeHole2D();
@@ -36,8 +46,8 @@ public class OnChangePosition : MonoBehaviour
             PointPositions[i] = hole2DCollider.transform.TransformPoint(PointPositions[i]);
         }
 
-        ground2DCollider.pathCount = 2;
-        ground2DCollider.SetPath(1, PointPositions);
+        ground2DCollider.pathCount += 1;
+        ground2DCollider.SetPath(ground2DCollider.pathCount-1, PointPositions);
     }
 
     private void Make3DMeshCollider()
@@ -46,5 +56,7 @@ public class OnChangePosition : MonoBehaviour
 
         generatedMesh = ground2DCollider.CreateMesh(true, true);
         generatedMeshCollider.sharedMesh = generatedMesh;
+
+        generatedMeshCollider.transform.localPosition = new Vector3(generatedMeshCollider.transform.localPosition.x, generatedMeshCollider.transform.localPosition.y, this.transform.parent.localPosition.x);
     }
 }
