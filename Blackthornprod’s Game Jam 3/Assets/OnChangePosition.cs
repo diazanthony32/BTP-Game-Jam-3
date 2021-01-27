@@ -13,6 +13,7 @@ public class OnChangePosition : MonoBehaviour
     [Space(5)]
 
     public bool isVertical;
+    public bool useInverseX;
 
     private float initalScale = 1f;
 
@@ -21,14 +22,17 @@ public class OnChangePosition : MonoBehaviour
         if (transform.hasChanged)
         {
             var wallY = transform.localPosition.z;
+            var x = transform.localPosition.x;
 
             if (isVertical)
                 wallY = transform.localPosition.y;
+            if (useInverseX)
+                x = -transform.localPosition.x;
 
 
             transform.hasChanged = false;
 
-            hole2DCollider.transform.position = new Vector2(transform.localPosition.x, wallY);
+            hole2DCollider.transform.position = new Vector2(x, wallY);
             hole2DCollider.transform.localScale = transform.localScale * initalScale;
 
             MakeHole2D();
