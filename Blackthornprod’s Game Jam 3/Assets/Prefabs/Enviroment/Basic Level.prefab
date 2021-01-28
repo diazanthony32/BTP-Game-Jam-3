@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1605742602658430344}
   m_Layer: 0
-  m_Name: Level
+  m_Name: Basic Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2687,6 +2687,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[119].second.m_TileSpriteIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1425940384528819227, guid: 17b5bb455f2424929bb71f1cfe5ff696, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
     - target: {fileID: 7557075197775007904, guid: 17b5bb455f2424929bb71f1cfe5ff696, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -5381,6 +5385,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[119].second.m_TileSpriteIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5235863697099260955, guid: d0ee98a13b48d42e39c319bc12a772ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0ee98a13b48d42e39c319bc12a772ab, type: 3}
 --- !u!4 &6836807458576697370 stripped
@@ -5403,6 +5411,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8874882803771354904, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
     - target: {fileID: 8874882803771354905, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
       propertyPath: m_Size.x
       value: 62
@@ -28205,6 +28217,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[119].second.m_TileSpriteIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5235863697099260955, guid: d0ee98a13b48d42e39c319bc12a772ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0ee98a13b48d42e39c319bc12a772ab, type: 3}
 --- !u!4 &7881673732587866314 stripped
@@ -30863,6 +30879,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[119].second.m_TileSpriteIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1425940384528819227, guid: 17b5bb455f2424929bb71f1cfe5ff696, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
     - target: {fileID: 7557075197775007904, guid: 17b5bb455f2424929bb71f1cfe5ff696, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -30929,6 +30949,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 8874882803771354904, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
     - target: {fileID: 8874882803771354905, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 891
