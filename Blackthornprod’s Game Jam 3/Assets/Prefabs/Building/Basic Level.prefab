@@ -30950,6 +30950,14 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8874882803771354904, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874882803771354904, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874882803771354904, guid: 4888dd7fa32f44d7c8e2b4aa1a8b9750, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a57f95d60356d48e9984ecb5ac786d6d, type: 2}
